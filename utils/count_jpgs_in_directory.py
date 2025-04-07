@@ -1,5 +1,9 @@
 import os
 
+'''
+This script counts the number of .jpg files in a given directory and its subdirectories.
+'''
+
 def count_jpgs_in_directory(directory):
     jpg_count = 0
 
@@ -12,7 +16,5 @@ def count_jpgs_in_directory(directory):
     
     return jpg_count
 
-# Replace 'your_directory_path' with the path to the directory you want to search
-
-print(count_jpgs_in_directory('./ColHis-IDS'))
-print(count_jpgs_in_directory('./ColHis-IDS_restructured'))
+# print(count_jpgs_in_directory('./ColHis-IDS'))
+# print(count_jpgs_in_directory('./ColHis-IDS_restructured'))

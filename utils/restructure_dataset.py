@@ -1,6 +1,9 @@
 import os
 import shutil
 
+'''
+This script restructures the dataset by organizing images into directories based on their magnification level and tumor differentiation stage.'''
+
 # Define the source and destination base paths
 source_base = './ColHis-IDS'
 destination_base = './ColHis-IDS_restructured'
@@ -26,7 +29,7 @@ for tumor_differentiation_stage in os.listdir(source_base):
 
                             # Check if it is a file
                             if os.path.isfile(img_file_path):
-                                # Create the corresponding destination directory based on magnification level and cancer type
+                                # Create the corresponding destination directory based on magnification level and tumor differentiation stage
                                 destination_tumor_differentiation_stage_dir = os.path.join(destination_base, magnification, tumor_differentiation_stage)
                                 os.makedirs(destination_tumor_differentiation_stage_dir, exist_ok=True)
 
